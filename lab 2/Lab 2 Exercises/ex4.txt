@@ -1,0 +1,8 @@
+The <address> element
+The address HTML element indicates that the annotated text provides contact informatios for persons, people or organizations.
+
+This tag is used to be for the author of a given web page only, not for general address details. However, after the W3C and the WHATWG agreement, it can be used to mark up arbitrary addresses.
+
+221B Baker St,
+Marylebone, London NW1 6XE,
+United Kingdom

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Guess who?</h1>
+    <p>
+      Guess Who? is a two-player character guessing game created by Ora and Theo Coster, also known
+      as Theora Design, that was first manufactured by Milton Bradley in 1979 and is now owned by
+      Hasbro. It was first brought to the UK by Jack Barr Sr. in 1982. The classic edition is
+      currently being produced by Winning Moves Games USA.
+    </p>
+
+    <h2>Let's play</h2>
+
+    <p>
+      I am the youngest child of my house. Due to my condition, I have learned to use my wit and
+      intellect to overcome the prejudice I have to face all the time.
+    </p>
+
+    <p>
+      I have had a very tough life. My father despites me. Many people tried to murder me during my
+      whole life. Among them, my sister, after being falsely accused of poisoning my nephew. I was
+      lucky then, and my brother saved me. Since then, I have lived in exile and now I serve the
+      enemy of my house.
+    </p>
+
+    <!--
+        When adding others work into your own, you need to remember to cite the original author or creator and where it came from.
+        There are many ways of adding the quotes, depending on how long and large it is.
+        https://www.w3schools.com/html/html_quotation_elements.asp
+    -->
+    <p>
+      You may remember what I said at my trial, when I was falsely accused of killing my nephew, the
+      King:
+      <q cite="https://www.imdb.com/title/tt3060910/quotes">
+        I'm guilty of a far more monstrous crime: I'm guilty of being a dwarf!
+      </q>
+    </p>
+
+    <!-- 
+      If you want to emphasize the sencence, you can use <strong>. 
+      If you want to display the text in bold, you should use CSS instead of <b>
+      but we have not learned CSS yet. 
+    -->
+    <p><strong>Who</strong> am I?</p>
+
+    <h2>Solution</h2>
+
+    <p>
+      This part of the exercise is a challenge and <strong>you don't need to implement it</strong>.
+      You will have to use JS to show/hide the answer of the game.
+    </p>
+
+    <p>
+      Click in the following button to find the solution:
+      <button id="show-answer__button" type="button">SHOW ME!</button>
+    </p>
+
+    <p id="show-answer__paragraph" style="display: none">The answer is: Lord Tyrion Lannister</p>
+
+    <hr />
+    <p>The introduction was extracted from Wikipedia.</p>
+
+    <script>
+      document.getElementById("show-answer__button").addEventListener("click", () => {
+        let showAnswerParagraph = document.getElementById("show-answer__paragraph");
+        let showAnswerButton = document.getElementById("show-answer__button");
+
+        if (showAnswerParagraph.style.display === "none") {
+          showAnswerParagraph.style.display = "block";
+          showAnswerButton.innerHTML = "HIDE THE ANSWER!";
+        } else {
+          showAnswerParagraph.style.display = "none";
+          showAnswerButton.innerHTML = "SHOW ME!";
+        }
+      });
+    </script>
+  </body>
+</html>
